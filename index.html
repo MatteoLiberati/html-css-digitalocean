@@ -17,13 +17,13 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header>
+    <header class="navbar-fixed-top">
         <nav class="container">
             <div class="row">
                 <!-- LOGO -->
                 <div class="col-xs-10 col-md-3">
                     <div class="relative">
-                        <img src="./img/logo.png" alt="logo digital ocean">
+                        <a href="#"><img src="./img/logo.png" alt="logo digital ocean"></a>
                     </div>
                 </div>
                 <!-- NAVBAR LEFT -->
@@ -37,7 +37,7 @@
                 </div>
                 <!-- HAMBURGER AND NAVBAR RIGHT -->
                 <div class="col-xs-2 text-right col-md-4">
-                    <i class="fas fa-bars hidden-md hidden-lg"></i>
+                    <a href="#"><i class="fas fa-bars hidden-md hidden-lg"></i></a>
                     <!-- NAVBAR RIGHT LG -->
                     <div class="hidden-xs hidden-sm">
                                 <ul>
@@ -59,10 +59,37 @@
         </div>
         </nav>
     </header>
-
+    
+    <!-- MAIN -->
     <main>
-        <!-- MAIN -->
         <!-- -HERO -->
+        <section class="hero padding-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 white-words w-100">
+                        <h1>The simplest cloud platform for developers & teams</h1>
+                        <p>Deploy, manage, and scale cloud applications faster and more evviciently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.</p>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="create-your-account text-center">
+                            <h3>Deploy your app in seconds.</h3>
+                            <a href="#"><h3>Get started now.</h3></a>
+                            <form action="">
+                                <input type="email" placeholder="Email" >
+                                <input type="password" placeholder="Password">
+                                <a href="#">
+                                    <div class="buttons button-create">Create your account</div>
+                                </a>
+                                <a href="#">
+                                    <div class="buttons button-google">Sign up with google</div>
+                                </a>
+                                <span>By signing up your agree to the <a href="#">Term of Service</a></span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- -CUSTOMERS -->
         <!-- -DEPLOY AND SCALE SEAMLESSY -->
         <!-- -SLIDE1 -->

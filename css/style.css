@@ -1,9 +1,24 @@
 /* MOBILE FIRST */
 /* GENERAL */
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2,
+h3, 
+h4, 
+h5{
+    font-weight: bold;
+}
+
+body{ 
+    padding-top: 70px; 
 }
 /* UTILITIES */
 body .container{    
@@ -27,9 +42,19 @@ body .container{
     border-radius: 5px;
 }
 
+.padding-section{
+    padding-top: 40px;
+    padding-bottom:40px;
+}
+
+.white-words{
+    color: #fff;
+}
+
 /* HEADER */
 header{
     line-height: 70px;
+    background-color: #fff;
 }
 
 header ul{
@@ -64,7 +89,7 @@ header .relative{
 }
 
 header img{
-    width: 150px;
+    width: 180px;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
@@ -74,13 +99,64 @@ header img{
 /* NAVBAR RIGHT */
 header i{
     vertical-align: middle;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #2586fd;
 }
 
 /* MAIN */
-
 /* -HERO */
+.hero{
+    background-image: url("../img/bg-banner-home.jpg");
+}
+
+.hero h1{
+    padding-top: 20px;
+    font-size: 3.2em;
+}
+
+.hero p{
+    font-size: 1.8em;
+    color: rgba(255, 255, 255, .8);
+}
+
+.hero .create-your-account{
+    padding: 20px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.hero .create-your-account a > h3{
+    margin-top: 0;
+    color: #2586fd;
+}
+
+.hero .create-your-account input{
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+}
+
+.hero .create-your-account .button-create{
+    margin-bottom: 15px;
+    color: #fff;
+    background-color: #2586fd;
+}
+
+.hero .create-your-account .button-google{
+    color: black;
+    background-image: url("../img/google-icon.png");
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.hero .create-your-account a{
+    text-decoration: underline;
+    color: #2586fd;
+}
+
 
 /* -CUSTOMERS */
 
