@@ -3,22 +3,75 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 /* UTILITIES */
-.ml-container{
+body .container{    
+    width: auto;
     max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
 }
+
+.bd{
+    border: 1px solid #000;
+}
+
+.relative{
+    position: relative;
+}
+
+.buttons{
+    line-height:1;
+    padding: 8px;
+    color: #2982ff;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+}
+
 /* HEADER */
 header{
-    line-height: 50px;
+    line-height: 70px;
+}
+
+header ul{
+    margin-bottom: 0;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+header ul a{
+    color: black;
+    transition: color .3s;
+}
+
+header ul a:hover{
+    color: #2982ff;
+}
+
+
+header nav .fa-chevron-down{
+    vertical-align: middle;
+    margin-left: 2px;
+    font-size: 0.7em;
+    color: currentColor;
+}
+
+/* -LOGO */
+header .relative{
+    height: 70px;
 }
 
 header img{
     width: 150px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
 }
+/* -NAVBAR LEFT */
 
+/* NAVBAR RIGHT */
 header i{
     vertical-align: middle;
     font-size: 1.2em;
