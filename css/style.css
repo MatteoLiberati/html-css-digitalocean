@@ -165,7 +165,7 @@ main .customers img{
     width: 38%;
 }
 
-main .customers .brands img:nth-child(odd){
+.customers img:nth-child(odd){
     margin-right: 30px;
 }
 
@@ -191,6 +191,19 @@ main .customers .brands img:nth-child(odd){
     /* GENERAL */
     *{
         font-size: 17px;
+    }
+    /* MAIN */
+    /* CUSTOMERS */
+    main .customers h6{
+        font-size: 1em;
+    }
+
+    main .customers img{
+        width: 13%;
+    }
+
+    main .customers img:not(:last-child){
+    margin-right: 20px;
     }
 }
 /* DESKTOP RESPONSIVE MD >992 */
