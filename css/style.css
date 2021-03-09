@@ -37,6 +37,10 @@ body{
     margin-bottom: 30px;
 }
 
+.mb-20{
+    margin-bottom: 20px;
+}
+
 .buttons{
     line-height:1;
     padding: 8px;
@@ -243,7 +247,7 @@ body .the-features a{
 /* -TABLE SERVICE */
 main .table-service table{
     width: 100%;
-    font-size: 0.7em;
+    font-size: 0.9em;
     line-height: 30px;
 }
 
@@ -306,6 +310,46 @@ main .get-started-now .buttons{
 }
 
 /* FOOTER */
+footer{
+    background-color: #031c4e;
+    color: #79849d;
+    font-size: 0.8em;
+}
+
+footer a{
+    color: currentColor;
+}
+
+/* -COPYRIGHT AND SOCIAL */
+footer .copyright-and-social img{
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer .copyright-and-social span:nth-child(3){
+    display: block;
+    margin-bottom: 10px;
+    opacity: .7;   
+}
+
+footer .copyright-and-social .social a{
+    font-size: 1.2em;
+}
+
+footer .copyright-and-social .social a:not(:last-child){
+    margin-right: 8px;
+}
+
+/* -LISTS */
+footer h4{
+    color: #fff;
+}
+
+footer ul{
+    list-style: none;
+    line-height: 1.8em;
+    margin-bottom: 0;
+}
 
 /* HELP SHARK */
 
@@ -343,7 +387,13 @@ main .get-started-now .buttons{
     /* SLIDE2 */
     main .slide2 .card-slide2{
     width: 50%;
-}
+    }
+
+    /* FOOTER */
+    /* -LISTS */
+    footer .lists > div:nth-child(3){
+        margin-bottom: 0;
+    }
 }
 
 /* DESKTOP RESPONSIVE MD >992 */
@@ -371,5 +421,11 @@ main .get-started-now .buttons{
     /* SLIDE1 */
     main .slide1 .slide-counter{
         margin-top: 5px;
+    }
+
+    /* FOOTER */
+    /* -LISTS */
+    footer .lists > div{
+        margin-bottom: 0;
     }
 }
