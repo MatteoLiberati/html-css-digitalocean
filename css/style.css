@@ -7,7 +7,19 @@
 *{
     margin: 0;
     padding: 0;
+}
+
+body{
+    font-size: 19px;
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+body a{
+    color: rgb(42, 148, 255);
+}
+
+body h3{
+    font-size: 1.8em;
 }
 
 h2,
@@ -42,8 +54,8 @@ body{
 }
 
 .padding-section{
-    padding-top: 40px;
-    padding-bottom:40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .white-words{
     color: #fff;
@@ -243,8 +255,8 @@ main .slide1 .arrows-slide a:last-child i{
 /* TABLET RESPONSIVE SM >768 */
 @media screen and (min-width: 768px) {
     /* GENERAL */
-    *{
-        font-size: 17px;
+    body{
+        font-size: 21px;
     }
 
     /* MAIN */
@@ -265,12 +277,16 @@ main .slide1 .arrows-slide a:last-child i{
     main .slide1 .card{
     width: 60%;
 }
+    /* THE FEATURES */
+    main .the-features .row > div{
+        margin-bottom: 0;
+    }
 
 /* DESKTOP RESPONSIVE MD >992 */
 @media screen and (min-width: 992px){
       /* GENERAL */
-    *{
-        font-size: 18px;
+    body{
+        font-size: 23px;
     }
 
     /* HERO */
