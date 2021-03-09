@@ -29,6 +29,10 @@ body{
     position: relative;
 }
 
+.mb-30{
+    margin-bottom: 30px;
+}
+
 .buttons{
     line-height:1;
     padding: 8px;
@@ -41,9 +45,12 @@ body{
     padding-top: 40px;
     padding-bottom:40px;
 }
-
 .white-words{
     color: #fff;
+}
+
+.bg-grey{
+    background-color: #f3f5f9;
 }
 
 /* HEADER */
@@ -147,13 +154,20 @@ header i{
     margin-bottom: 15px;
 }
 
-.hero .create-your-account a{
+.hero .create-your-account a:last-child{
     text-decoration: underline;
     color: #2586fd;
 }
 
-
 /* -CUSTOMERS */
+main .customers img{
+    display: inline-block;
+    width: 38%;
+}
+
+main .customers .brands img:nth-child(odd){
+    margin-right: 30px;
+}
 
 /* -DEPLOY AND SCALE SEAMLESSY */
 
