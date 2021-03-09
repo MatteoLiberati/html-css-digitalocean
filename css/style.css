@@ -29,10 +29,6 @@ body{
     padding-top: 70px; 
 }
 /* UTILITIES */
-.bd{
-    border: 1px solid #000;
-}
-
 .relative{
     position: relative;
 }
@@ -59,6 +55,28 @@ body{
 
 .bg-grey{
     background-color: #f3f5f9;
+}
+
+main .slide .slide-counter i{
+    font-size: 0.6em;
+    color: dodgerblue;
+}
+
+main .slide .arrows-slide a:first-child i{
+    position: absolute;
+    top: 50%;
+    right: 102%;                 
+    transform: translate(0, -50%);
+    font-size: 1.5em;
+    color: rgb(141, 134, 134);
+}
+
+main .slide .arrows-slide a:last-child i{
+    position: absolute;
+    top: 50%;
+    left: 102%;
+    transform: translate(0, -50%);
+    font-size: 1.5em;
 }
 
 /* HEADER */
@@ -199,40 +217,18 @@ main .slide1 .content-for-developers{
     font-size: 1.3em;
 }
 
-main .slide1 .card{
+main .slide1 .card-slide1{
     width: 70%;
     margin: 80px auto 0px;
 }
 
-main .slide1 .description-card{
+main .slide1 .description-card-slide1{
     margin-top: 20px;
     font-size: .7em;
 }
 
 main .slide1 .slide-counter{
     margin-top: 60px;
-}
-
-main .slide1 .slide-counter i{
-    font-size: 0.6em;
-    color: dodgerblue;
-}
-
-main .slide1 .arrows-slide a:first-child i{
-    position: absolute;
-    top: 50%;
-    right: 102%;                 
-    transform: translate(0, -50%);
-    font-size: 1.5em;
-    color: rgb(141, 134, 134);
-}
-
-main .slide1 .arrows-slide a:last-child i{
-    position: absolute;
-    top: 50%;
-    left: 102%;
-    transform: translate(0, -50%);
-    font-size: 1.5em;
 }
 
 /* -THE FEATURES */
@@ -276,6 +272,32 @@ main .table-service tr td:last-child{
 
 /* -SLIDE2 */
 
+main .slide2 .card-slide2{
+    width: 60%;
+    margin: 80px auto 40px;
+    background-color: #fff;
+}
+
+main .slide2 .card-slide2 img{
+    width: 16em;
+    margin: auto;
+    padding: 50px 0 20px;
+}
+
+main .slide2 .card-slide2 .author{
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+main .slide2 .card-slide2 span{
+    display: block;
+}
+
+main .slide2 .card-slide2 span:last-child{
+    padding: 30px 0 40px;
+}
+
+
 /* -GET STARTED NOW */
 
 /* FOOTER */
@@ -307,17 +329,31 @@ main .table-service tr td:last-child{
     /* SLIDE1 */
     main .slide1 .card{
     width: 60%;
-}
+    }
     /* THE FEATURES */
     main .the-features .row > div{
         margin-bottom: 0;
     }
+
+    /* SLIDE2 */
+    main .slide2 .card-slide2{
+    width: 50%;
+}
+}
 
 /* DESKTOP RESPONSIVE MD >992 */
 @media screen and (min-width: 992px){
       /* GENERAL */
     body{
         font-size: 23px;
+    }
+
+    main .slide .arrows-slide a:first-child i{
+    right: 106%;                 
+    }
+
+    main .slide .arrows-slide a:last-child i{
+        left: 106%;
     }
 
     /* HERO */
