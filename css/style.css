@@ -352,6 +352,63 @@ footer ul{
 }
 
 /* HELP SHARK */
+.help-shark{
+    position: fixed;
+    bottom: 40px;
+    left: 5%;
+}
+
+.help-shark .shark{
+    display: inline-block;
+    position: absolute;
+    bottom: 120%;
+    left: 0;
+    width: 2.4em;
+    height: 2.4em;
+    background-color: #006aff;
+    border-radius: 2px;
+    filter: drop-shadow(0 0 0.2em black);
+}
+
+.help-shark .shark img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.help-shark .shark .notification{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    font-size: 0.6em;
+    width: 2em;
+    line-height: 1.5em;
+    background-color: red;
+    color: #fff;
+    border: 3px solid currentColor;
+    border-radius: 50%;
+}
+
+.help-shark .help{
+    width: 15em;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    filter: drop-shadow(0 0 0.2em black);
+}
+
+.help-shark .help:after{
+    position: absolute;
+    content: "";
+    right: 0;
+    transform: translate(50%, 0) rotate( 45deg);
+    display: inline-block;
+    height: .8em;
+    width: .8em;
+    background-color: #fff;
+}
 
 /* MEDIA QUERIES */
 /* TABLET RESPONSIVE SM >768 */
@@ -427,5 +484,19 @@ footer ul{
     /* -LISTS */
     footer .lists > div{
         margin-bottom: 0;
+    }
+
+    /* HELP SHARK */
+    .help-shark{
+    bottom: 40px;
+    left: auto;
+    right: 12%;
+    }
+
+    .help-shark .shark{
+    bottom: 0;
+    left: 108%;
+    width: 3em;
+    height: 3em;
     }
 }
