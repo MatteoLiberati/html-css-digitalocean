@@ -170,7 +170,17 @@ main .customers img{
 }
 
 /* -DEPLOY AND SCALE SEAMLESSY */
+main .deploy-and-scale ul{
+    padding-left: 10px;
+    list-style: none;
+    line-height: 2em;
+    border-left: 2px solid grey;
+}
 
+main .deploy-and-scale ul a{
+    color: grey;
+    text-decoration: none;
+}
 /* -SLIDE1 */
 
 /* -THE FEATURES */
