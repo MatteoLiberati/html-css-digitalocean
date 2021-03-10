@@ -1,9 +1,5 @@
 /* MOBILE FIRST */
 /* GENERAL */
-html{
-    scroll-behavior: smooth;
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -28,6 +24,11 @@ h5{
 body{ 
     padding-top: 70px; 
 }
+
+body a:hover{
+    text-decoration: none;
+}
+
 /* UTILITIES */
 .relative{
     position: relative;
@@ -42,11 +43,13 @@ body{
 }
 
 .buttons{
+    display:inline-block;
     line-height:1;
     padding: 8px;
     color: #2982ff;
     border: 1px solid currentColor;
     border-radius: 5px;
+    transition: transform .2s, color .3s, background-color .3s;
 }
 
 .padding-section{
@@ -70,21 +73,27 @@ main .slide .slide-counter i{
     color: dodgerblue;
 }
 
-main .slide .arrows-slide a:first-child i{
+main .slide .arrows-slide a i{
     position: absolute;
-    top: 50%;
-    right: 102%;                 
+    top: 50%;               
     transform: translate(0, -50%);
     font-size: 1.5em;
+    color: rgb(141, 134, 134);
+    transition: color .2s
+}
+
+main .slide .arrows-slide a:first-child i{
+    right: 102%;                 
     color: rgb(141, 134, 134);
 }
 
 main .slide .arrows-slide a:last-child i{
-    position: absolute;
-    top: 50%;
     left: 102%;
-    transform: translate(0, -50%);
-    font-size: 1.5em;
+    color: black;
+}
+
+main .slide .arrows-slide a:hover i{
+    color: #2982ff;
 }
 
 /* HEADER */
@@ -109,6 +118,11 @@ header ul a{
 
 header ul a:hover{
     color: #2982ff;
+}
+
+header ul a:hover .buttons{
+    background-color: rgb(75, 71, 71);
+    color: white;
 }
 
 
@@ -172,6 +186,9 @@ header i{
     border: 1px solid lightgrey;
     border-radius: 2px;
 }
+.hero .create-your-account .buttons{
+    display: block;
+}
 
 .hero .create-your-account .button-create{
     margin-bottom: 15px;
@@ -208,13 +225,27 @@ main .deploy-and-scale ul{
     padding-left: 10px;
     list-style: none;
     line-height: 2em;
+}
+
+main .deploy-and-scale ul li{
+    padding-left: 10px;
     border-left: 2px solid grey;
+}
+
+main .deploy-and-scale ul li:hover{
+    border-color: #2586fd;
 }
 
 main .deploy-and-scale ul a{
     color: grey;
     text-decoration: none;
+    transition: color 0.2s;
 }
+
+main .deploy-and-scale ul a:hover{
+    color: #2586fd;
+}
+
 /* -SLIDE1 */
 main .slide1{
     padding-left: 15px;
@@ -262,10 +293,15 @@ main .table-service tr td:first-child{
 
 main .table-service a{
     color: #07bdc0;
+    transition: color .2s
+}
+
+main .table-service a:hover{
+    color: #f3f5f9;
 }
 
 main .table-service tr td:nth-child(2){
-    width: 57%;
+    width: 55%;
     opacity: 0.8;
 }
 
@@ -307,6 +343,24 @@ main .get-started-now .buttons{
     background-color: #fff;
     border: transparent;
     color: #2586fd;
+}
+
+@keyframes to-float{
+    0%{
+        transform: scale(1);
+        color: #2586fd;
+    }
+
+    50%{
+        transform: scale(1.1);
+        color: black;
+    }
+
+}
+
+main .get-started-now a:hover{
+    display:inline-block;
+    animation: to-float 1s linear infinite;
 }
 
 /* FOOTER */
@@ -351,11 +405,24 @@ footer ul{
     margin-bottom: 0;
 }
 
+footer a{
+    transition: color 0.2s;
+}
+
+footer a:hover{
+    color:white;
+}
+
 /* HELP SHARK */
 .help-shark{
     position: fixed;
     bottom: 40px;
     left: 5%;
+    transition: transform 0.2s;
+}
+
+.help-shark:hover{
+    transform: scale(1.1);
 }
 
 .help-shark .shark{
@@ -425,7 +492,7 @@ footer ul{
     }
 
     main .customers img{
-        width: 13%;
+        width: 11%;
     }
 
     main .customers img:not(:last-child){
@@ -466,6 +533,11 @@ footer ul{
 
     main .slide .arrows-slide a:last-child i{
         left: 106%;
+    }
+
+    /* HEADER */
+    header ul{
+        font-size: .8em;
     }
 
     /* HERO */
